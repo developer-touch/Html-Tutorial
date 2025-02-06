@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regular Expression</title>
+    </head>
+    <body>
+        <form method="GET">
+            <fieldset>
+                <legend>Form Validation</legend>
+                <dl>
+                    <div>
+                        <dt>Name</dt>
+                        <dd><input type="text" name="name" placeholder="enter ur name" pattern="[a-zA-Z]{4,7}\s"></dd>
+                    </div>
+                    <div>
+                        <dt>Email Address</dt>
+                        <dd><input type="email" name="email" placeholder="enter ur email" pattern="\w[2,10]\@\w{2,5}\.\w{3}"></dd>
+                    </div>
+                    <div>
+                        <dt>Password</dt>
+                        <dd><input type="password" name="password" placeholder="enter ur password" pattern="\d{2,10}"></dd>
+                    </div>
+                    <div>
+                        <button type="submit">Register</button>
+                    </div>
+                </dl>
+            </fieldset>
+        </form>
+    </body>
+</html>

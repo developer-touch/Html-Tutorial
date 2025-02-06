@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Elements</title>
+        <style>
+            dt{
+                font-size: 30px;
+                font-weight: bold;
+                border: 2px solid red;
+                border-radius: 10px;
+                box-shadow: 3px 3px 3px tomato;
+                width: 400px;
+                height: 50px;
+                text-align: center;
+                padding: 10px;
+            }
+            dd{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 30px;
+                text-shadow: 3px 2px 5px darkcyan;
+            }
+            input{
+                height: 30px;
+            }
+            button{
+                width: 400px;
+                height: 40px;
+                padding: 10px;
+                color: white;
+                background-color: tomato;
+                border: 2px solid red;
+                border-radius: 10px;
+                box-shadow: 4px 4px 5px red;
+            }
+            button:hover{
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET">
+            <div>
+                <dt>Select Your Favorite FW</dt>
+                <dd>
+                    <input type="radio" name="spring">Spring FW
+                    <input type="radio" name="spring-boot" checked>Spring-Boot FW
+                    <input type="radio" name="bootstrap">Bootstrap
+                    <input type="radio" name="angular">Angular
+                    <input type="radio" name="react">React
+                </dd>
+            </div>
+            <div>
+                <dt>Select Your Favorite Subject</dt>
+                <dd>
+                    <input type="radio" name="subject" value="java">Java
+                    <input type="radio" name="subject" value="html">HTML
+                    <input type="radio" name="subject" value="css">CSS
+                    <input type="radio" name="subject" value="js">Javascript
+                    <input type="radio" name="subject" value="angular">Angular
+                </dd>
+            </div>
+            <div>
+                <dt>Select Payment Modes</dt>
+                <dd>
+                    <input type="checkbox" name="upi" value="upi">UPI
+                    <input type="checkbox" name="card" value="card">CARD
+                    <input type="checkbox" name="cash" value="cash">CASH
+                </dd>
+            </div>
+            <div>
+                <button>Register</button>
+            </div>
+        </form>
+    </body>
+</html>

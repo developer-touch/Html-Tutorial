@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fieldset-Legend</title>
+        <style>
+            dl{
+                display: grid;
+                grid-template-columns: 3fr 9fr;
+            }
+            dt{
+                color: red;
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            dd{
+                color: blue;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            fieldset{
+                margin-top: 20px;
+                padding: 10px;
+            }
+            legend{
+                text-align: center;
+                border: 2px solid black;
+                padding: 10px;
+                font-size: 25px;
+                font-weight: bold;
+                height: 30px;
+                width: 200px;
+                background-color: aqua;
+                box-shadow: 5px 6px 2px black;
+                border-radius: 20px;
+                color: tomato;
+            }
+            h1{
+                text-align: center;
+                border: 2px solid black;
+                text-shadow: 2px 4px 5px red;
+                color: yellow;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>PRODUCT CATALOG</h1>
+        <fieldset>
+            <legend>Product Details</legend>
+        <dl>
+            <dt>Name ::</dt>
+            <dd>Phone</dd>
+            <dt>Price ::</dt>
+            <dd>10000</dd>
+            <dt>Stock</dt>
+            <dd>Available</dd>
+        </dl>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Details</legend>
+        <dl>
+            <dt>Bank Name ::</dt>
+            <dd>ICICI</dd>
+            <dt>Acc No ::</dt>
+            <dd>45125157454</dd>
+            <dt>IFSC</dt>
+            <dd>SBI772288</dd>
+            <dt>Price</dt>
+            <dd>10000</dd>
+        </dl>
+        </fieldset>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign-In</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .container{
+            width: 500px;
+            height: 600px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        img{
+            margin-bottom: 10px;
+            width: 200px;
+            height: 50px;
+            margin-left:120px;
+        }
+        #page-body{
+            border: 2px solid grey;
+            box-shadow: 2px 3px 3px white;
+            padding: 20px;
+            border-radius: 5px;
+            height: 440px;
+        }
+        #page-middle{
+            margin-top: 10px;
+            text-align: center;
+        }
+        #page-middle button{
+            width: 100%;
+        }
+        #footer-div{
+            display: flex;
+            margin-top: 10px;
+            padding: 20px;
+            text-align: center;
+            justify-content: space-between;
+        }
+        #page-footer{
+            margin-top: 10px;
+            padding: 20px;
+            border: 1px solid rgb(232, 228, 228);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="page-header">
+            <img src="assets/amazonlogo.jpeg" alt="amazon-logo-image">
+        </div>
+        <div id="page-body">
+            <div id="card-header">
+                <h3>Sign-In</h3>
+                <p class="input-group ">
+                    <dt>Email or mobile phone number</dt>
+                    <input type="email" class="form-control">
+                    <button class="btn btn-warning btn-lg">Continue</button>
+                </p>
+            </div>
+            <div id="card-body">
+                By continuing, you agree to Amazon's <a href="#">Condition of Use </a><span>and</span> <a href="#">Privacy Notice</a>
+                <div>
+                   <details>
+                        <summary><a href="#">Need help?</a></summary>
+                        <dl>
+                            <dd><a href="#">Forget Password</a></dd>
+                            <dd><a href="#">Other issues with Sign-In</a></dd>
+                        </dl>
+                   </details>
+                </div>
+                <div>
+                    <hr>
+                    <dt>Buying for work?</dt>
+                    <p><a href="#">Shop on Amazon business</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="page-middle">
+            <p>New to account</p>
+            <button><a href="#">Create your Amazon A</a></button>
+        </div>
+    </div>
+    <div id="page-footer">
+        <div id="footer-div">
+            <div><a href="#">Conditions Of Use</a></div>
+            <div><a href="#">Privacy Notice</a></div>
+            <div><a href="#">Help</a></div>
+        </div>
+        &copy;1996-2024,Amazon.com, Inc. or its affilliates
+    </div>
+</body>
+</html>

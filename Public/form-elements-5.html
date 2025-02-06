@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Elements</title>
+        <style>
+            fieldset{
+                margin: 30px;
+                padding: 20px;
+                border: 2px solid gray;
+                border-radius: 5px;
+                box-shadow: 2px 1px 3px black;
+                background-image: url(assets/formbg.jpeg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            dt{
+                margin-bottom: 20px;
+                height: 40px;
+                font-size: 30px;
+                font-weight: bold;
+                margin-left: 30px;
+                margin-top: 10px;
+                text-shadow: 5px 5px 2px grey;
+            }
+            legend{
+                border: 2px solid grey;
+                text-align: center;
+                font-size: 30px;
+                padding: 20px;
+                color:tomato;
+                background-color: yellow;
+                width: 500px;
+                border-radius: 10px;
+                box-shadow: 3px 2px 10px red;
+                text-shadow: 3px 4px 5px tomato;
+            }
+            div{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 4fr 4fr;
+            }
+            #accept~span{
+                font-size: 20px;
+
+            }
+            .input{
+                width: 400px;
+                height: 30px;
+                font-size: 20px;
+                padding: 5px;
+                font-weight: bold;
+                border: 2px solid gray;
+                border-radius: 5px;
+            }
+            select{
+                width: 400px;
+                height: 40px;
+                font-size: 20px;
+                padding: 5px;
+                border: 2px solid gray;
+                border-radius: 5px;
+                
+            }
+            #accept:checked~span{
+                color: red;
+            }
+            #course{
+                overflow: auto;
+            }
+            button{
+                font-size: 30px;
+                text-align: center;
+                margin-left: 500px;
+                background-color: tomato;
+                color: white;
+                padding: 5px;
+                border: 2px solid red;
+                box-shadow: 3px 2px 5px darkcyan;
+                border-radius: 10px;
+            }
+            button:hover{
+                background-color: blue;
+                box-shadow: 3px 2px 5px grey;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET">
+            <fieldset>
+                <legend>Naresh i Technology Student Registration Form </legend>
+                <div>
+                    <dt>Name *</dt>
+                    <dd><input class="input" type="text" name="name" placeholder="enter your name" autofocus></dd>
+                </div>
+                <div>
+                    <dt>Email *</dt>
+                    <dd><input class="input" type="email" name="email" placeholder="enter your email"></dd>
+                </div>
+                <div>
+                    <dt>Conact No *</dt>
+                    <dd><input class="input" type="number" name="phone" placeholder="enter your phone"></dd>
+                </div>
+                <div>
+                    <dt>Mode Of Training *</dt>
+                    <dd>
+                        <select name="taining" id="taning">
+                            <option value="online">Online Training</option>
+                            <option value="classroom">Classroom Training</option>
+                            <option value="weekend">Weekend Training</option>
+                            <option value="project">Project Training</option>
+                            <option value="internship">Internship</option>
+                        </select>
+                    </dd>
+                </div>
+                <div>
+                    <dt>State *</dt>
+                    <dd><input class="input" type="text" name="state"></dd>
+                </div>
+                <div>
+                    <dt>Course *</dt>
+                    <dd>
+                        <select name="course" id="course">
+                            <option selected>select course</option>
+                            <option value="java">Java</option>
+                            <option value="advjava">Advance Java</option>
+                            <option value="spring">Spring Framework</option>
+                            <option value="sbms">Springboot & Microservices</option>
+                            <option value="ui">UI Technology</option>
+                            <option value="reactjs">React JS</option>
+                            <option value="regularjs">Angular JS</option>
+                            <option value="nodejs">Node Js</option>
+                            <option value="full java">Full Stack Java</option>
+                            <option value="php">PHP with MySQL</option>
+                            <option value="aws">AWS</option>
+                            <option value="azure">AZURE</option>
+                            <option value="python">Python</option>
+                            <option value="full python">Full Stack Python</option>
+                            <option value="Hadoop">HADOOP</option>
+                            <option value="full science">Full Stack Data Science</option>
+                        </select>
+                    </dd>
+                </div>
+                <div>
+                    <dt>
+                        <input type="checkbox" id="accept" name="accept"><span>I agree to the privacy policy.</span>
+                    </dt>
+                </div>
+                <div >
+                    <button align="center">SUBMIT</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

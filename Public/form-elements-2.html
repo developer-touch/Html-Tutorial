@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Elements</title>
+        <style>
+            form{
+                height: 100%;
+                background-image: url(assets/html5.jpeg);
+                opacity: 0px,0px,0px,0.5px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            dl{
+                font-size: 30px;
+                padding: 20px;
+                margin: 20px;
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+            }
+            dt{
+                margin-bottom: 20px;
+                margin-top: 20px;
+                border: 2px solid grey;
+                margin-left: 20px;
+                padding: 10px;
+                background-color: black;
+                color: white;
+                box-shadow: 3px 3px 3px grey;
+                text-shadow: 2px 2px 2px tomato;
+            }
+            input{
+                width: 300px;
+                height: 20px;
+                font-size: 20px;
+                padding: 20px;
+                color: tomato;
+                border: 2px solid red;
+                border-radius: 10px;
+                box-shadow: 2px 4px 2px tomato;
+            }
+            #btn{
+                width: 600px;
+                margin-left: 40px;
+                background-color: grey;
+                color: red;
+                font-size: 40px;
+                text-align: center;
+                font-weight: bold;
+                font-style: Arial;
+                padding: 10px;
+                height: 80px;
+            }
+            #btn:hover{
+                background-color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET">
+           <dl>
+                <div>
+                    <dt>Full Name</dt>
+                    <dd><input type="text" name="name" placeholder="Enter your name" required autofocus></dd>
+                </div>   
+                <div>
+                    <dt>Email</dt>
+                    <dd><input type="email" name="email" placeholder="Enter your email" required autofocus></dd>
+                </div> 
+                <div>
+                    <dt>Password</dt>
+                    <dd><input type="password" name="password" placeholder="Enter your password" required pattern="[a-z]{5,8}"></dd>
+                </div>  
+                <div>
+                    <dt>Phone</dt>
+                    <dd><input type="number" name="phone" placeholder="Enter your phone" required autofocus></dd>
+                </div>
+                <div>
+                    <dt>Age</dt>
+                    <dd><input type="number" name="age" min="12" max="20" step="2" placeholder="Enter your age" required></dd>
+                </div> 
+                <div>
+                    <dt>Income Salary</dt>
+                    <dd><input type="range" name="slary" ></dd>
+                </div>
+                <div>
+                    <dt>Select DOB</dt>
+                    <dd><input type="date" name="dob" min="2000-01-01" max="2024-09-10" placeholder="Enter your DOB"></dd>
+                </div>
+                <div>
+                    <dt>Select MOB</dt>
+                    <dd><input type="month" name="mob" min="2000-01-01" max="2024-09-10" placeholder="Enter your MOB"></dd>
+                </div>
+                <div>
+                    <dt>Select WOB</dt>
+                    <dd><input type="week" name="wob" min="2000-01-01" max="2024-09-10" placeholder="Enter your WOB"></dd>
+                </div>
+                <div>
+                    <dt>Select DTOB</dt>
+                    <dd><input type="datetime-local" min="2000-01-01" max="2024-09-10" name="dtob" placeholder="Enter your DTOB"></dd>
+                </div>
+                <div>
+                    <dt>Enter Your Profile URL</dt>
+                    <dd><input type="url" name="url" placeholder="Enter your profile url"></dd>
+                </div>
+                <div>
+                    <dt>Enter Your Certificate</dt>
+                    <dd><input type="file" accept=".docx,.pdf" name="certificate" placeholder="Enter your certificate" multiple></dd>
+                </div>
+                <div>
+                    <dt>Enter Your Resume</dt>
+                    <dd><input type="file" accept=".docx" name="resume" placeholder="Enter your resume"></dd>
+                </div>
+                <div>
+                    <dt>Enter Your Favorite Color</dt>
+                    <dd><input type="color" name="color" placeholder="Enter your color" value="red"></dd>
+                </div>
+            </dl>     
+            <div align="center">
+                <input type="submit" value="Register" id="btn">
+            </div>   
+        </form>
+    </body>
+</html>

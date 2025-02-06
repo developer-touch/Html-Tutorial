@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intra Links</title>
+        <style>
+            .topic{
+                padding: 20px;
+                border: 2px solid green;
+                padding: 20px;
+                background-color: grey;
+                color: white;
+                margin-top: 20px;
+            }
+            .topic:target{
+                background-color: cyan;
+                color: red;
+            }
+            .topic:hover{
+                background-color: yellow;
+                color: green;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+            }
+            li{
+                font-size: 20px;
+                margin-right: 40px;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JavaScript</a></li>
+            </ul>
+        </div>
+        <div class="topic" id="html">
+            <h2>HTML</h2>
+            <p>It is a markup language</p>
+        </div>
+        <div class="topic" id="css">
+            <h2>CSS</h2>
+            <p>It define style for html</p>
+        </div>
+        <div class="topic" id="js">
+            <h2>JavaScript</h2>
+            <p>It handle the client page interactive</p>
+        </div>
+    </body>
+</html>

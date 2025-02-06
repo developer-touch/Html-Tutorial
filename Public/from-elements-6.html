@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: 4fr 10fr;
+        }
+        dt{
+            margin: 20px;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            height: 30px;
+            width: 500px;
+        }
+        dd{
+            margin: 20px;
+            padding: 20px;
+        }
+        select{
+            width: 200px;
+            font-size: 20px;
+        }
+        meter{
+            width: 200px;
+            height: 40px; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <dt>Mode Of Training *</dt>
+        <dd>
+            <select name="taining" id="taning">
+                <option value="online">Online Training</option>
+                <option value="classroom">Classroom Training</option>
+                <option value="weekend">Weekend Training</option>
+                <option value="project">Project Training</option>
+                <option value="internship">Internship</option>
+            </select>
+        </dd>
+    </div>
+    <div>
+        <dt>Select Your Favorite Palce *</dt>
+        <dd>
+            <select name="place" id="place" multiple>
+                <option >Select Place</option>
+                <option value="patna">Patna</option>
+                <option value="delhi">Delhi</option>
+                <option value="hyd">HYD</option>
+                <option value="banglore">Banglore</option>
+                <option value="gujarat">Gujrat</option>
+                <option value="chennai">Chennai</option>
+                <option value="mp">MP</option>
+            </select>
+        </dd>
+    </div>
+    <div>
+        <dt>Marks</dt>
+        <dd><meter value="100" min="1" max="100" low="60" high="40"></meter></dd>
+    </div>
+</body>
+</html>

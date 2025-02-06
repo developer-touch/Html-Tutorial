@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table Attribute</title>
+        <style>
+            tfoot{
+                text-align: center;
+            }
+            tbody{
+                text-align: center;
+            }
+            table{
+                color: red;
+                text-shadow: 2px 2px 2px tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <table frame="box" border="1" width="600" align="center" background="/Public/assets/puma-shoes.jpeg">
+            <caption>Product Details</caption>
+            <thead height="30">
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </thead>
+            <tbody height="100">
+               <tr>
+                    <td>Phone</td>
+                    <td>20000</td>
+                    <td>Available</td>
+               </tr>
+                <tr>
+                    <td>Shoes</td>
+                    <td>2000</td>
+                    <td>Available</td>
+               </tr>
+               <tr>
+                    <td>Iphone</td>
+                    <td>200000</td>
+                    <td>Not Available</td>
+                </tr>
+            </tbody  height="20">
+            <tfoot >
+                <tr>
+                    <td colspan="3">&copy; copyright 2024</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

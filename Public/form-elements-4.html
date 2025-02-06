@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Elements</title>
+        <style>
+            .dt{
+                font-size: 40px;
+                width: 600px;
+                height: 100%;
+                border: 2px solid grey;
+                border-radius: 5px;
+                box-shadow: 5px 4px 5px red;
+                padding: 10px;
+                color: tomato;
+                background-color: black;
+
+            }
+            dd{
+                font-size: 30px;
+            }
+            .input{
+                width: 500px;
+                height: 40px;
+                border: 2px solid ;
+                box-shadow: 3px 3px 4px black;
+                margin: 20px;
+                padding: 10px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            #accept~span{
+                font-size: 30px;
+                
+            }
+            #accept:checked~span{
+                color: red;
+                font-weight: bold;
+                text-shadow: 2px 5px 4px red;
+            }
+            button{
+                margin-top: 20px;
+                width: 600px;
+                height: 60px;
+                text-align: center;
+                padding: 10px;
+                border: 2px solid tomato;
+                box-shadow: 3px 4px 3px tomato;
+                font-size: 30px;
+            }
+            button:hover{
+                background-color: blue;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET">
+            <div>
+                <dt class="dt">Full Name</dt>
+                <dd><input class="input" type="text" name="name" placeholder="Enter your name" autofocus></dd>
+            </div>
+            <div>
+                <dt class="dt">Email</dt>
+                <dd><input class="input" type="email" name="email" placeholder="Enter your email"></dd>
+            </div>
+            <div>
+                <dt class="dt">Password</dt>
+                <dd><input class="input" type="password" name="password" placeholder="Enter your password"></dd>
+            </div>
+            <div>
+                <dt><input id="accept" type="checkbox" id="accept"><span>Accept</span></dt>
+            </div>
+            <div><button>Register</button></div>
+        </form>
+    </body>
+</html>
